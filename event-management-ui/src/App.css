@@ -1,0 +1,129 @@
+/* General styling */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header */
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.App-title {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+/* Event List */
+.EventList {
+  text-align: left;
+  padding: 20px;
+  margin: 20px;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.EventList h2 {
+  color: #007bff;
+}
+
+.EventList ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.EventList-item {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+  transition: transform 0.2s ease-in-out;
+}
+
+.EventList-item:hover {
+  transform: scale(1.02);
+}
+
+.EventList-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.EventList h3 {
+  color: #333;
+  margin: 10px 0;
+}
+
+.EventList-subEvent {
+  margin-bottom: 10px;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.EventList-subEvent strong {
+  color: #007bff;
+}
+
+/* Tree Component */
+.TreeComponent {
+  margin: 20px auto;
+  max-width: 900px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.TreeNode {
+  margin-left: 20px;
+  padding: 10px;
+  border-left: 2px solid #007bff;
+  margin-bottom: 10px;
+  background: #f9f9f9;
+  border-radius: 4px;
+}
+
+.TreeNode-title {
+  font-size: 1.2em;
+  color: #333;
+  font-weight: bold;
+}
+
+.TreeNode-children {
+  margin-left: 20px;
+}
+
+h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.App, .EventList, .TreeComponent {
+  animation: fadeIn 1s ease-in;
+}
